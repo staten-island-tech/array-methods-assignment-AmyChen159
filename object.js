@@ -1,30 +1,48 @@
-const things = [
+const characters = [
     {
-        firstName: "Jimothy",
-        lastName: "Mcpicker",
-        gender: "male",
-        numbers: [1,2,3,5],
+        name: "Xiao",
+        element: "Anemo",
+        weapon: "Polearm",
+        region: "Liyue",
+        abilities: ["Normal Attack: Whirlwing Thrust", "Elemental Skill: Lemniscatic Wind Cycling", "Elemental Burst: Bane of All Evil"],
     },
     {
-        firstName: "Pipper",
-        lastName: "Potty",
-        gender: "female",
-        numbers: [1,2,3,5],
+        name: "Hu Tao",
+        element: "Pyro",
+        weapon: "Polearm",
+        region: "Liyue",
+        abilities: ["Normal Attack: Secret Spear of Wansheng", "Elemental Skill: Guide to Afterlife", "Elemental Burst: Spirit Soother"]
     },
     {
-        firstName: "Smooth",
-        lastName: "Crimminal",
-        gender: "male",
-        numbers: [1,2,3,5],
+        name: "Kaedehara Kazuha",
+        element: "Anemo",
+        weapon: "Sword",
+        region: "Inazuma",
+        abilities: ["Normal Attack: Garyuu Bladework", "Elemental Skill: Chihayaburu", "Elemental Burst: Kazuha Slash"]
     },
     {
-        firstName: "Hit",
-        lastName: "By",
-        gender: "male",
-        numbers: [1,2,3,5],
+        name: "Lyney",
+        element: "Pyro",
+        weapon: "Bow",
+        region: "Fontaine",
+        abilities: ["Normal Attack: Card Force Translocation", "Elemental Skill: Bewildering Lights", "Elemental Burst: Wondrous Trick:Miracle Parade"]
+    },
+    {
+        name: "Wanderer",
+        element: "Anemo",
+        weapon: "Catalyst",
+        region: "Sumeru",
+        abilities: ["Normal Attack: Yuuban Meigen", "Elemental Skill: Hanega: Song of the Wind", "Elemental Burst: Kyogen:Five Ceremonial Plays"]
     },
 ]
 
-things.forEach((gender) => {
-    console.log(gender);
+characters.forEach((character) => {
+    console.log(character.name);
 });
+characters.forEach((character) => {
+    console.log(character.name);
+    character.ability.forEach((abilities) => {
+        console.log(abilities);
+    });
+});
+
