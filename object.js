@@ -4,51 +4,43 @@ const characters = [
         element: "Anemo",
         weapon: "Polearm",
         region: "Liyue",
-        abilities: ["Normal Attack: Whirlwing Thrust", "Elemental Skill: Lemniscatic Wind Cycling", "Elemental Burst: Bane of All Evil"],
+        abilities: ["Whirlwing Thrust", "Lemniscatic Wind Cycling", "Bane of All Evil"],
     },
     {
         name: "Hu Tao",
         element: "Pyro",
         weapon: "Polearm",
         region: "Liyue",
-        abilities: ["Normal Attack: Secret Spear of Wansheng", "Elemental Skill: Guide to Afterlife", "Elemental Burst: Spirit Soother"],
+        abilities: ["Secret Spear of Wansheng", "Guide to Afterlife", "Spirit Soother"],
     },
     {
         name: "Kaedehara Kazuha",
         element: "Anemo",
         weapon: "Sword",
         region: "Inazuma",
-        abilities: ["Normal Attack: Garyuu Bladework", "Elemental Skill: Chihayaburu", "Elemental Burst: Kazuha Slash"],
+        abilities: ["Garyuu Bladework", "Chihayaburu", "Kazuha Slash"],
     },
     {
         name: "Lyney",
         element: "Pyro",
         weapon: "Bow",
         region: "Fontaine",
-        abilities: ["Normal Attack: Card Force Translocation", "Elemental Skill: Bewildering Lights", "Elemental Burst: Wondrous Trick:Miracle Parade"],
+        abilities: ["Card Force Translocation", "Bewildering Lights", "Wondrous Trick:Miracle Parade"],
     },
     {
         name: "Wanderer",
         element: "Anemo",
         weapon: "Catalyst",
         region: "Sumeru",
-        abilities: ["Normal Attack: Yuuban Meigen", "Elemental Skill: Hanega: Song of the Wind", "Elemental Burst: Kyogen:Five Ceremonial Plays"],
+        abilities: ["Yuuban Meigen", "Hanega: Song of the Wind", "Kyogen:Five Ceremonial Plays"],
     },
 ];
 
 characters.forEach((character) => {
     console.log(character.name);
-    characters.abilities.forEach((ability) => {
+    character.abilities.forEach((ability) => {
         console.log(ability);
     });
 });
-
-// characters.forEach((character) => {
-//     console.log(character.name);
-//     character.ability.forEach((abilities) => {
-//         console.log(abilities);
-//     });
-// });
-// characters.abilities.forEach((ability) => {
-//     console.log(ability);
-// });
+const element = characters.filter((character) => character.element === "Anemo" );
+console.log(element);
