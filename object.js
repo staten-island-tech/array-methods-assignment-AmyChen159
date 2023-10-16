@@ -25,14 +25,14 @@ const characters = [
         element: "Pyro",
         weapon: "Bow",
         region: "Fontaine",
-        abilities: ["Card Force Translocation", "Bewildering Lights", "Wondrous Trick:Miracle Parade"],
+        abilities: ["Card Force Translocation", "Bewildering Lights", "Wondrous Trick: Miracle Parade"],
     },
     {
         name: "Wanderer",
         element: "Anemo",
         weapon: "Catalyst",
         region: "Sumeru",
-        abilities: ["Yuuban Meigen", "Hanega: Song of the Wind", "Kyogen:Five Ceremonial Plays"],
+        abilities: ["Yuuban Meigen", "Hanega: Song of the Wind", "Kyogen: Five Ceremonial Plays"],
     },
 ];
 
